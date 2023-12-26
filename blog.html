@@ -244,7 +244,7 @@ For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
 			text: editor.getData()
 		};
 		const myJSON = JSON.stringify(obj);
-		$.post("data",{myJSON},console.log("trace on"));
+		$.post("http://52.15.231.92:7070/data",{myJSON},console.log("trace on"));
 		document.getElementById("close").click();
 		
 	}
